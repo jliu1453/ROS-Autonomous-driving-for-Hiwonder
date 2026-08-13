@@ -1,0 +1,6 @@
+[console_scripts]
+audio_Input = ai_research.audio_input:main
+command_Input = ai_research.command:main
+image_Processor = ai_research.imageProcessor:main
+video_Input = ai_research.videoInput:main
+

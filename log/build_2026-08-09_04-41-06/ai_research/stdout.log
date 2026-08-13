@@ -1,0 +1,63 @@
+running egg_info
+creating build/ai_research/ai_research.egg-info
+writing build/ai_research/ai_research.egg-info/PKG-INFO
+writing dependency_links to build/ai_research/ai_research.egg-info/dependency_links.txt
+writing entry points to build/ai_research/ai_research.egg-info/entry_points.txt
+writing requirements to build/ai_research/ai_research.egg-info/requires.txt
+writing top-level names to build/ai_research/ai_research.egg-info/top_level.txt
+writing manifest file 'build/ai_research/ai_research.egg-info/SOURCES.txt'
+reading manifest file 'build/ai_research/ai_research.egg-info/SOURCES.txt'
+writing manifest file 'build/ai_research/ai_research.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ubuntu/ros2_ws/src/ai_research/build/ai_research/build
+creating /home/ubuntu/ros2_ws/src/ai_research/build/ai_research/build/lib
+creating /home/ubuntu/ros2_ws/src/ai_research/build/ai_research/build/lib/ai_research
+copying ai_research/command.py -> /home/ubuntu/ros2_ws/src/ai_research/build/ai_research/build/lib/ai_research
+copying ai_research/imageProcessor.py -> /home/ubuntu/ros2_ws/src/ai_research/build/ai_research/build/lib/ai_research
+copying ai_research/__init__.py -> /home/ubuntu/ros2_ws/src/ai_research/build/ai_research/build/lib/ai_research
+copying ai_research/videoInput.py -> /home/ubuntu/ros2_ws/src/ai_research/build/ai_research/build/lib/ai_research
+copying ai_research/audio_input.py -> /home/ubuntu/ros2_ws/src/ai_research/build/ai_research/build/lib/ai_research
+creating /home/ubuntu/ros2_ws/src/ai_research/build/ai_research/build/lib/ai_research/llm
+copying ai_research/llm/__init__.py -> /home/ubuntu/ros2_ws/src/ai_research/build/ai_research/build/lib/ai_research/llm
+copying ai_research/llm/sample.py -> /home/ubuntu/ros2_ws/src/ai_research/build/ai_research/build/lib/ai_research/llm
+creating /home/ubuntu/ros2_ws/src/ai_research/build/ai_research/build/lib/ai_research/vlm
+copying ai_research/vlm/__init__.py -> /home/ubuntu/ros2_ws/src/ai_research/build/ai_research/build/lib/ai_research/vlm
+copying ai_research/vlm/moonDream.py -> /home/ubuntu/ros2_ws/src/ai_research/build/ai_research/build/lib/ai_research/vlm
+running install
+running install_lib
+creating /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/lib/python3.10/site-packages/ai_research
+copying /home/ubuntu/ros2_ws/src/ai_research/build/ai_research/build/lib/ai_research/command.py -> /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/lib/python3.10/site-packages/ai_research
+copying /home/ubuntu/ros2_ws/src/ai_research/build/ai_research/build/lib/ai_research/imageProcessor.py -> /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/lib/python3.10/site-packages/ai_research
+copying /home/ubuntu/ros2_ws/src/ai_research/build/ai_research/build/lib/ai_research/__init__.py -> /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/lib/python3.10/site-packages/ai_research
+creating /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/lib/python3.10/site-packages/ai_research/llm
+copying /home/ubuntu/ros2_ws/src/ai_research/build/ai_research/build/lib/ai_research/llm/__init__.py -> /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/lib/python3.10/site-packages/ai_research/llm
+copying /home/ubuntu/ros2_ws/src/ai_research/build/ai_research/build/lib/ai_research/llm/sample.py -> /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/lib/python3.10/site-packages/ai_research/llm
+creating /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/lib/python3.10/site-packages/ai_research/vlm
+copying /home/ubuntu/ros2_ws/src/ai_research/build/ai_research/build/lib/ai_research/vlm/__init__.py -> /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/lib/python3.10/site-packages/ai_research/vlm
+copying /home/ubuntu/ros2_ws/src/ai_research/build/ai_research/build/lib/ai_research/vlm/moonDream.py -> /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/lib/python3.10/site-packages/ai_research/vlm
+copying /home/ubuntu/ros2_ws/src/ai_research/build/ai_research/build/lib/ai_research/videoInput.py -> /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/lib/python3.10/site-packages/ai_research
+copying /home/ubuntu/ros2_ws/src/ai_research/build/ai_research/build/lib/ai_research/audio_input.py -> /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/lib/python3.10/site-packages/ai_research
+byte-compiling /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/lib/python3.10/site-packages/ai_research/command.py to command.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/lib/python3.10/site-packages/ai_research/imageProcessor.py to imageProcessor.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/lib/python3.10/site-packages/ai_research/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/lib/python3.10/site-packages/ai_research/llm/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/lib/python3.10/site-packages/ai_research/llm/sample.py to sample.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/lib/python3.10/site-packages/ai_research/vlm/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/lib/python3.10/site-packages/ai_research/vlm/moonDream.py to moonDream.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/lib/python3.10/site-packages/ai_research/videoInput.py to videoInput.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/lib/python3.10/site-packages/ai_research/audio_input.py to audio_input.cpython-310.pyc
+running install_data
+creating /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/share/ament_index
+creating /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/share/ament_index/resource_index
+creating /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/share/ament_index/resource_index/packages
+copying resource/ai_research -> /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/share/ament_index/resource_index/packages
+copying package.xml -> /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/share/ai_research
+running install_egg_info
+Copying build/ai_research/ai_research.egg-info to /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/lib/python3.10/site-packages/ai_research-0.0.0-py3.10.egg-info
+running install_scripts
+Installing audio_Input script to /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/lib/ai_research
+Installing command_Input script to /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/lib/ai_research
+Installing image_Processor script to /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/lib/ai_research
+Installing video_Input script to /home/ubuntu/ros2_ws/src/ai_research/install/ai_research/lib/ai_research
+writing list of installed files to '/home/ubuntu/ros2_ws/src/ai_research/build/ai_research/install.log'
