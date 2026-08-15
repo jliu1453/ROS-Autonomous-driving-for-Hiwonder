@@ -1,0 +1,1 @@
+This is the code repository for my undergraduate research at seattle univeristy for summer 2026 The current code are still in progress and cannot run as is see references.txt for use of code, idea, and ai generated content
