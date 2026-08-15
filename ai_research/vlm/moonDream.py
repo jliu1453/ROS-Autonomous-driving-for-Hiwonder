@@ -2,6 +2,7 @@ from transformers import AutoModelForCausalLM
 from PIL import Image
 import torch
 
+#copied from moonDream.ai at https://moondream.ai/skills/point
 class Detector:
     def __init__(self):
     # Load the model

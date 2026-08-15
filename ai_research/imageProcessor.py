@@ -10,43 +10,44 @@ from ai_research.vlm.moonDream import Detector
 class ImageProcessor(Node):
     def __init__(self):
         super().__init__("locate_object")
-        self.publisher_ = self.create_publisher(String, 'text', 10)
-        self.inputSubscription = self.create_subscription(
-            CommandMsg,
-            'command',
-            self.input_callback,
+        self.publisher_ = self.create_publisher(String, 'text', 10) #publish coordinate to be recieved and used for driving
+        self.logic_subscription = self.create_subscription( #subscribe to command that carry extracted object name
+            String,
+            'ai_command',
+            self.command_callback,
             10)
         
         self.image_subscription = self.create_subscription( #found in https://wiki.hiwonder.com/projects/rosorin-pro/en/latest/docs/6_ROS%2BOpenCV_Course.html, hiwonder
             Image, 
-            '/depth_cam/rgb0/image_raw', 
+            '/depth_cam/rgb0/image_raw',  #rgb img
             self.image_callback, 
             1
             )
         self.depth_subscription = self.create_subscription( #found in https://wiki.hiwonder.com/projects/rosorin-pro/en/latest/docs/6_ROS%2BOpenCV_Course.html, hiwonder
             Image,
-            '/depth_cam/depth0/image_raw', 
+            '/depth_cam/depth0/image_raw',  #depth img
             self.depth_callback,
             1
             )
             
-        self.detector = Detector()
-        self.command = CommandMsg()
+        self.detector = Detector() #moonDream
+        self.command = String()
         self.newImg = None
         self.DepthImg = None
         self.bridge = CvBridge() # #found in https://wiki.hiwonder.com/projects/rosorin-pro/en/latest/docs/6_ROS%2BOpenCV_Course.html, hiwonder
         self.i = 1
-        self.pixelLength = 640
+        self.pixelLength = 640 
         self.pixelHeight = 400 
     
-    def input_callback(self, msg):
+    def command_callback(self, msg):
+    #get coordinate of x and y using moondream, z using depth and combine into one
         self.command = msg
-        self.get_logger().info("recieved command...")
+        self.get_logger().info("recieved command for object detection from ai...")
         coordinate = String()
         if self.newImg is None:
              self.get_logger().info("Waiting for image...")
              return
-        coordinate.data = self.detector.detect(self.newImg, self.command.object)
+        coordinate.data = self.detector.detect(self.newImg, self.command.data)
         
         if coordinate.data != "":
             x, y = map(float, coordinate.data.split(","))
@@ -56,8 +57,6 @@ class ImageProcessor(Node):
             y = int(y)
             depth = self.depthImg[y, x]
             self.get_logger().info(str(depth))
-            with open("coordinates.txt", "w") as file: #safe way to open file
-                file.write(coordinate.data)
             self.publisher_.publish(coordinate)
             self.get_logger().info(coordinate.data)
         else:

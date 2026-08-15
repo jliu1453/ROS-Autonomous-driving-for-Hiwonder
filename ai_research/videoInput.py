@@ -3,11 +3,11 @@ import queue
 import cv2
 import numpy
 from rclpy.node import Node
-from std_msgs.msg import String #ros way to wrapp msg in to data
-from cv_bridge import CvBridge #last 2 referenced by hiwonder's code
+from std_msgs.msg import String 
+from cv_bridge import CvBridge 
 from sensor_msgs.msg import Image
 
-
+#node created using template in Writing a simple publisher and subscriber (Python) at https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html
 class VideoInput(Node):
      def __init__(self):
           super().__init__('input_camera')

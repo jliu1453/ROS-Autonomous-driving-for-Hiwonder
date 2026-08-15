@@ -1,11 +1,9 @@
 import rclpy
 from rclpy.node import Node
-from ai_research_interfaces.msg import CommandMsg
-
 from std_msgs.msg import String
 
 
-
+#node created using template in Writing a simple publisher and subscriber (Python) at https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html
 class directCommand(Node):
     def __init__(self):
         super().__init__("direct_command")
