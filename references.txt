@@ -1,1 +1,4 @@
 S. Macenski, T. Foote, B. Gerkey, C. Lalancette, W. Woodall, “Robot Operating System 2: Design, architecture, and uses in the wild,” Science Robotics vol. 7, May 2022.
+Hiwonder, “ROS Machine Learning Course,” ROSOrin Pro Documentation. Available: ROS + Machine Learning Course
+Hiwonder, “Large AI Model Courses,” ROSOrin Pro Documentation. Available: Large AI Model Courses
+Hiwonder, “ROS OpenCV Course,” ROSOrin Pro Documentation. Available: ROS + OpenCV Course
