@@ -1,4 +1,6 @@
 S. Macenski, T. Foote, B. Gerkey, C. Lalancette, W. Woodall, “Robot Operating System 2: Design, architecture, and uses in the wild,” Science Robotics vol. 7, May 2022.
-Hiwonder, “ROS Machine Learning Course,” ROSOrin Pro Documentation. Available: ROS + Machine Learning Course
-Hiwonder, “Large AI Model Courses,” ROSOrin Pro Documentation. Available: Large AI Model Courses
-Hiwonder, “ROS OpenCV Course,” ROSOrin Pro Documentation. Available: ROS + OpenCV Course
+Hiwonder, “ROS Machine Learning Course,” ROSOrin Pro Documentation. https://wiki.hiwonder.com/projects/rosorin-pro/en/latest/docs/7_ROS+Machine_Learning_Course.html.
+Hiwonder, “Large AI Model Courses,” ROSOrin Pro Documentation. https://wiki.hiwonder.com/projects/rosorin-pro/en/latest/docs/12_Large_AI_Model_Courses.html.
+Hiwonder, “ROS OpenCV Course,” ROSOrin Pro Documentation. https://wiki.hiwonder.com/projects/rosorin-pro/en/latest/docs/6_ROS+OpenCV_Course.html.
+Moondream, “Point: Pinpoint and Count,” Moondream, 2026. https://moondream.ai/skills/point.
+Hugging Face, “Command Line Interface (CLI),” Hugging Face Hub Documentation. https://huggingface.co/docs/huggingface_hub/en/guides/cli
